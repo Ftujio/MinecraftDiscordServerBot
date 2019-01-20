@@ -24,6 +24,14 @@ bot.on('message', msg => {
   }
 });
 
+function userIsMentioned(msg: Discord.Message, userDescriminator: string): boolean {
+	return !!msg.mentions.users.find(user => user.discriminator === userDescriminator);
+}
+
+function botIsMentioned(msg: Discord.Message): boolean {
+	return userIsMentioned(msg, config.botDescriminator);
+}
+
 function get(url: string): Promise<any> {
 	return new Promise(resolve => {
 		http.get(url, res => {
