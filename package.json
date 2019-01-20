@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Ftujio/MinecraftDiscordServerBot#readme",
   "dependencies": {
     "discord.js": "^11.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.4"
   }
 }
