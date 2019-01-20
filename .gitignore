@@ -2,4 +2,4 @@
 /dist
 package-lock.json
 
-config.ts
+/src/config.ts
